@@ -26,10 +26,29 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-                navigator.serviceWorker.register('flutter_service_worker.js?v=49731253');
+                navigator.serviceWorker.register('flutter_service_worker.js?v=3295210257');
             });
         }
     </script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-storage.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyA1pt2IMbC0Ni0xGURQr46nJ1o_Er-_oHg",
+            authDomain: "beast-trainig.firebaseapp.com", //beast-trainig.firebaseapp.com
+            // databaseURL: "https://[YOUR_PROJECT].firebaseio.com",
+            projectId: "beast-trainig",
+            storageBucket: "beast-trainig.appspot.com", //https://console.firebase.google.com/project/beast-trainig/storage/beast-trainig.appspot.com/files
+            // messagingSenderId: "800682459859",
+            appId: "1:800682459859:web:2933f1b9406c94aa2f8a26",
+            // measurementId: "G-...",
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
     <script src="main.dart.js" type="application/javascript"></script>
 </body>
 
